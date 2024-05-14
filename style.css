@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #007BFF;
+    --primary-hover: #0056b3;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --border-color: #ddd;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+a, button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+a:hover, button:hover {
+    background: var(--primary-hover);
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    body {
+        padding: 40px;
+    }
+
+    ul li {
+        padding: 20px 40px;
+    }
+}
